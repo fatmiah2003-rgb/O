@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>وعيك حياة | التوعية بالسكري</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f9ff;--card:#fff;--ink:#0f2a4a;--mut:#51708f;--pri:#1668c9;--pri2:#0b4a9a;--soft:#e3f0ff;--ok:#1a9a6b;--no:#d6455d;--bd:#d3e4f7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1626;--card:#10233b;--ink:#e8f1fc;--mut:#9ab4d0;--pri:#5aa6ff;--pri2:#2f7fe0;--soft:#152f4f;--ok:#43d19e;--no:#ff7a8e;--bd:#223f61}}
+:root[data-theme="dark"]{--bg:#0a1626;--card:#10233b;--ink:#e8f1fc;--mut:#9ab4d0;--pri:#5aa6ff;--pri2:#2f7fe0;--soft:#152f4f;--ok:#43d19e;--no:#ff7a8e;--bd:#223f61}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,Arial,sans-serif;line-height:1.8}
+nav{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--bd);display:flex;gap:6px;overflow-x:auto;padding:10px 12px}
+nav a{white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;padding:6px 14px;border-radius:99px;background:var(--soft)}
+nav a:hover,nav a.act{background:var(--pri);color:#fff}
+.pg{display:none}.pg.on{display:block;animation:fin .35s}
+@keyframes fin{from{opacity:0;transform:translateY(8px)}}
+.nxt{display:flex;justify-content:space-between;gap:10px;margin-top:26px}
+.nxt a{text-decoration:none;background:var(--soft);color:var(--pri2);font-weight:700;padding:10px 20px;border-radius:99px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .nxt a{color:var(--pri)}}
+.hero{background:linear-gradient(135deg,#1668c9,#0b4a9a);color:#fff;text-align:center;padding:48px 20px 56px}
+.hero .drop{font-size:54px}
+.hero h1{margin:6px 0;font-size:clamp(30px,7vw,48px);font-weight:800}
+.hero p{max-width:560px;margin:8px auto;opacity:.95}
+.badge{display:inline-block;background:rgba(255,255,255,.18);border-radius:99px;padding:4px 16px;font-size:14px;margin-top:10px}
+.hero{position:relative;overflow:hidden;padding:40px 16px 48px}
+.bg i{position:absolute;bottom:-40px;font-style:normal;opacity:.18;animation:up linear infinite}
+@keyframes up{to{transform:translateY(-130vh) rotate(25deg)}}
+.hero>*:not(.bg){position:relative}
+.bigdrop{background:#fff;border:3px solid rgba(255,255,255,.6);border-radius:50%;width:124px;height:124px;padding:0;overflow:hidden;cursor:pointer;animation:pulse 2.4s ease-in-out infinite;transition:transform .2s}
+.bigdrop img{width:100%;height:100%;object-fit:cover;display:block}
+.bigdrop:active{transform:scale(.88)}
+@keyframes pulse{50%{transform:scale(1.07);box-shadow:0 0 0 18px rgba(255,255,255,.1)}}
+.hero h1{background:linear-gradient(90deg,#fff,#bfe0ff,#fff);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 4s linear infinite;margin:10px 0 4px}
+@keyframes sh{to{background-position:-200% 0}}
+.school{font-size:20px;font-weight:700;margin:4px 0}
+.fact{max-width:520px;margin:14px auto 0;min-height:56px;background:rgba(255,255,255,.14);border-radius:16px;padding:10px 16px;font-size:15px;transition:opacity .3s}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;max-width:760px;margin:22px auto 0}
+.pc{background:rgba(255,255,255,.95);color:#0f2a4a;border-radius:16px;padding:12px;text-align:center;border:0;font-family:inherit;cursor:pointer;transition:transform .2s}
+.pc:hover,.pc.on{transform:translateY(-4px)}
+.pc small{display:block;color:#1668c9;font-weight:700;font-size:13px}
+.pc b{font-size:17px}
+.pc em{display:none;font-style:normal;font-size:13px;color:#51708f}
+.pc.on em{display:block}
+.go{display:inline-block;margin-top:22px;background:#fff;color:#0b4a9a;font-weight:800;text-decoration:none;padding:11px 30px;border-radius:99px}
+section{max-width:900px;margin:0 auto;padding:36px 16px 8px}
+h2{font-size:26px;color:var(--pri);margin:0 0 6px}
+.sub{color:var(--mut);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:18px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p,.card li{margin:4px 0;color:var(--mut);font-size:15px}
+.card ul{padding-inline-start:20px;margin:6px 0}
+.ico{font-size:30px}
+.plate{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg{border:2px solid transparent;border-radius:16px;padding:16px;text-align:center;font-weight:700;cursor:pointer;color:#0f2a4a;font-family:inherit;font-size:16px}
+.seg.v{grid-column:1/3;background:#bfe8cf}.seg.p{background:#ffd9c2}.seg.c{background:#fff0b8}
+.seg.on{border-color:var(--pri2);box-shadow:0 0 0 3px var(--soft)}
+.seg span{display:block;font-size:30px}
+#plateInfo{margin-top:12px;min-height:56px}
+.flip{perspective:800px;cursor:pointer;min-height:150px;border:0;background:none;padding:0;font-family:inherit;text-align:inherit;color:inherit}
+.fi{position:relative;min-height:150px;transition:transform .5s;transform-style:preserve-3d}
+.flip.on .fi{transform:rotateY(180deg)}
+.f,.b{position:absolute;inset:0;border-radius:18px;padding:16px;backface-visibility:hidden;display:flex;flex-direction:column;justify-content:center;border:1px solid var(--bd)}
+.f{background:var(--card)}.f b{color:var(--no)}
+.b{background:var(--soft);transform:rotateY(180deg)}.b b{color:var(--ok)}
+.hint{font-size:13px;color:var(--mut)}
+.chk{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--bd);cursor:pointer;font-size:16px}
+.chk input{width:22px;height:22px;accent-color:var(--pri)}
+.bar{height:12px;background:var(--soft);border-radius:99px;overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .4s}
+.opt{display:block;width:100%;text-align:start;margin:8px 0;padding:12px 14px;border-radius:14px;border:2px solid var(--bd);background:var(--card);color:var(--ink);font-family:inherit;font-size:16px;cursor:pointer}
+.opt:hover{border-color:var(--pri)}
+.opt.right{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,var(--card))}
+.opt.wrong{border-color:var(--no);background:color-mix(in srgb,var(--no) 15%,var(--card))}
+.btn{background:var(--pri2);color:#fff;border:0;border-radius:99px;padding:10px 24px;font-family:inherit;font-weight:700;font-size:16px;cursor:pointer;margin-top:10px}
+.note{background:var(--soft);border-radius:14px;padding:12px 16px;margin-top:16px;font-size:14px;color:var(--mut)}
+footer{margin-top:40px;background:var(--pri2);color:#fff;text-align:center;padding:26px 16px}
+footer b{font-size:18px}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">🏠 الرئيسية</a><a href="#types">الأنواع</a><a href="#signs">الأعراض</a><a href="#plate">الطبق المثالي</a><a href="#move">الحركة</a><a href="#feet">القدمان</a><a href="#myths">حقائق</a><a href="#quiz">اختبار</a>
+</nav>
+
+<header class="hero pg" id="home">
+<div class="bg" id="bg"></div>
+<span class="badge">اليوم العالمي للسكري · 14 نوفمبر</span><br>
+<button class="bigdrop" id="bd" aria-label="معلومة"><img src="data:image/jpeg;base64,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" alt="شعار اليوم العالمي للسكري"></button>
+<h1>وعيك حياة</h1>
+<p style="font-weight:700;margin:0">معاً.. لوعيٍ أفضل.. لحياةٍ صحية</p>
+<div class="school">🏫 ابتدائية عفراء للطفولة المبكرة</div>
+<div class="fact" id="fact">اضغطي على القطرة لتعرفي معلومة جديدة 👆</div>
+<div class="people">
+<button class="pc"><small>👩‍🏫 إعداد المعلمة</small><b>فاطمه الشهراني</b><em>معلمة التربية الفنية</em></button>
+<button class="pc"><small>🩺 الموجهة الصحية</small><b>صينه علي القرني</b><em>الإشراف الصحي</em></button>
+<button class="pc"><small>⭐ مديرة المدرسة</small><b>فاطمه سعيد القرني</b><em>الإشراف العام</em></button>
+</div>
+<a class="go" href="#types">ابدئي الرحلة ⬇</a>
+</header>
+
+<section class="pg" id="types">
+<h2>ما هو السكري؟</h2>
+<p class="sub">الجسم يحتاج هرموناً اسمه الإنسولين ليدخل السكر من الدم إلى الخلايا فيعطيها الطاقة. في السكري يختل هذا العمل.</p>
+<div class="grid">
+<div class="card"><div class="ico">🧬</div><h3>النوع الأول</h3><p>يتوقف البنكرياس عن إنتاج الإنسولين أو ينتج القليل جداً منه. يحتاج المصاب إلى الإنسولين بإشراف الطبيب. لا يرتبط بالإفراط في أكل السكريات.</p></div>
+<div class="card"><div class="ico">⚖️</div><h3>النوع الثاني</h3><p>لا يستفيد الجسم من الإنسولين جيداً. من عوامل الخطر: زيادة الوزن وقلة الحركة والوراثة. يمكن غالباً تأخيره أو الوقاية منه بنمط حياة صحي.</p></div>
+<div class="card"><div class="ico">🤰</div><h3>سكري الحمل</h3><p>يظهر أثناء الحمل وقد يزول بعد الولادة، ويحتاج متابعة طبية للأم والجنين.</p></div>
+</div>
+</section>
+
+<section class="pg" id="signs">
+<h2>أعراض تستحق الانتباه</h2>
+<p class="sub">وجودها لا يعني التشخيص، لكنها سبب لمراجعة الطبيب.</p>
+<div class="grid">
+<div class="card"><div class="ico">🥤</div><h3>عطش شديد</h3></div>
+<div class="card"><div class="ico">🚽</div><h3>كثرة التبول</h3></div>
+<div class="card"><div class="ico">😴</div><h3>تعب وخمول</h3></div>
+<div class="card"><div class="ico">👓</div><h3>تغيّر في الرؤية</h3></div>
+</div>
+</section>
+
+<section class="pg" id="plate">
+<h2>الطبق المثالي</h2>
+<p class="sub">اضغطي على كل جزء من الطبق لتعرفي دوره.</p>
+<div class="plate">
+<button class="seg v" data-k="v"><span>🥗</span>نصف الطبق: خضروات</button>
+<button class="seg p" data-k="p"><span>🍗</span>ربع: بروتين</button>
+<button class="seg c" data-k="c"><span>🍚</span>ربع: نشويات</button>
+</div>
+<div class="card" id="plateInfo">اختاري جزءاً من الطبق.</div>
+</section>
+
+<section class="pg" id="move">
+<h2>النشاط البدني الذكي</h2>
+<p class="sub">الحركة تساعد الجسم على الاستفادة من الإنسولين.</p>
+<div class="grid">
+<div class="card"><div class="ico">🏃‍♀️</div><h3>العب كل يوم</h3><p>يُنصح الأطفال بنحو 60 دقيقة نشاط يومياً: ركض وقفز ولعب في الهواء الطلق.</p></div>
+<div class="card"><div class="ico">📱</div><h3>قلّل الجلوس</h3><p>حدّدي وقتاً للشاشات، وقومي للحركة بين فترة وأخرى.</p></div>
+<div class="card"><div class="ico">💧</div><h3>اشربي الماء</h3><p>الماء أفضل مشروب، وهو بديل صحي للعصائر والمشروبات الغازية.</p></div>
+</div>
+</section>
+
+<section class="pg" id="feet">
+<h2>العناية بالقدمين</h2>
+<p class="sub">السكري قد يقلل الإحساس في القدمين، لذلك الفحص اليومي مهم. ضعي علامة على كل عادة.</p>
+<div class="card">
+<label class="chk"><input type="checkbox"> 👀 أفحص قدمي كل يوم بحثاً عن جروح أو احمرار</label>
+<label class="chk"><input type="checkbox"> 🧼 أغسل قدمي وأجففهما جيداً خاصة بين الأصابع</label>
+<label class="chk"><input type="checkbox"> 👟 أرتدي حذاءً مريحاً وجوارب نظيفة</label>
+<label class="chk"><input type="checkbox"> 🚫 لا أمشي حافية القدمين</label>
+<label class="chk"><input type="checkbox"> 🗣️ أخبر الكبار فوراً إذا رأيت جرحاً</label>
+<div class="bar"><i id="fbar"></i></div>
+<div id="ftxt" class="hint">0 من 5</div>
+</div>
+</section>
+
+<section class="pg" id="myths">
+<h2>مفاهيم خاطئة وحقائق</h2>
+<p class="sub">اضغطي على البطاقة لتكشفي الحقيقة.</p>
+<div class="grid">
+<button class="flip"><div class="fi"><div class="f"><b>❌ السكري ينتقل بالعدوى</b></div><div class="b"><b>✅ حقيقة:</b> السكري ليس مُعدياً، ولا ينتقل باللمس أو اللعب.</div></div></button>
+<button class="flip"><div class="fi"><div class="f"><b>❌ أكل الحلويات وحده يسبب السكري</b></div><div class="b"><b>✅ حقيقة:</b> للسكري أسباب متعددة، لكن الإكثار من السكريات يزيد خطر النوع الثاني مع عوامل أخرى.</div></div></button>
+<button class="flip"><div class="fi"><div class="f"><b>❌ المصاب بالسكري ممنوع من كل الحلويات</b></div><div class="b"><b>✅ حقيقة:</b> يمكن تناول قدر قليل ضمن خطة غذائية يضعها الطبيب أو أخصائي التغذية.</div></div></button>
+<button class="flip"><div class="fi"><div class="f"><b>❌ المصابة بالسكري لا تستطيع اللعب</b></div><div class="b"><b>✅ حقيقة:</b> يمكنها اللعب والتعلم مع صديقاتها مع الالتزام بخطة العلاج.</div></div></button>
+</div>
+</section>
+
+<section class="pg" id="quiz">
+<h2>اختبري معلوماتك</h2>
+<div class="card" id="qbox"></div>
+</section>
+
+<section><div class="note">⚕️ هذه المنصة للتوعية العامة ولا تغني عن استشارة الطبيب. عند ظهور أعراض أو شك في الإصابة، راجعي الطبيب أو المركز الصحي.</div></section>
+
+<footer><b>وعيك حياة</b><br>ابتدائية عفراء للطفولة المبكرة · إدارة تعليم عسير<br>إعداد: فاطمه الشهراني</footer>
+
+<script>
+var info={v:"الخضروات تمنح أليافاً وفيتامينات وتشبع دون رفع السكر كثيراً: خيار وجزر وسلطة.",p:"البروتين يبني الجسم: دجاج وسمك وبيض وبقوليات.",c:"النشويات مصدر الطاقة لكن بكمية مناسبة. الأفضل الحبوب الكاملة مثل الخبز الأسمر."};
+document.querySelectorAll(".seg").forEach(function(s){s.onclick=function(){document.querySelectorAll(".seg").forEach(function(x){x.classList.remove("on")});s.classList.add("on");document.getElementById("plateInfo").textContent=info[s.dataset.k]}});
+document.querySelectorAll(".flip").forEach(function(f){f.onclick=function(){f.classList.toggle("on")}});
+var cks=document.querySelectorAll(".chk input");
+cks.forEach(function(c){c.onchange=function(){var n=0;cks.forEach(function(x){if(x.checked)n++});document.getElementById("fbar").style.width=(n*20)+"%";document.getElementById("ftxt").textContent=n==5?"🎉 أحسنتِ! عادات رائعة لقدمين سليمتين":n+" من 5"}});
+var Q=[
+{q:"ما الهرمون الذي يُدخل السكر من الدم إلى الخلايا؟",o:["الإنسولين","الأدرينالين","الكالسيوم"],a:0},
+{q:"ما أفضل مشروب لصحتك؟",o:["المشروبات الغازية","الماء","العصير المحلى"],a:1},
+{q:"كم يملأ البروتين من الطبق المثالي؟",o:["نصف الطبق","ربع الطبق","الطبق كله"],a:1},
+{q:"هل السكري مرض مُعدٍ؟",o:["نعم ينتقل باللمس","نعم بالمشاركة في الطعام","لا، ليس مُعدياً"],a:2},
+{q:"ماذا نفعل لقدمينا كل يوم؟",o:["نفحصهما ونجففهما","نتركهما مبللتين","نمشي حافيات"],a:0}];
+var i=0,sc=0,box=document.getElementById("qbox");
+function show(){if(i>=Q.length){box.innerHTML="<h3>نتيجتك: "+sc+" من "+Q.length+" "+(sc>=4?"🌟 ممتازة!":"👏 أحسنتِ، حاولي مرة أخرى")+"</h3><button class='btn' id='rs'>إعادة الاختبار</button>";document.getElementById("rs").onclick=function(){i=0;sc=0;show()};return}
+var q=Q[i];box.innerHTML="<div class='hint'>السؤال "+(i+1)+" من "+Q.length+"</div><h3>"+q.q+"</h3>";
+q.o.forEach(function(t,k){var b=document.createElement("button");b.className="opt";b.textContent=t;b.onclick=function(){var all=box.querySelectorAll(".opt");all.forEach(function(x){x.disabled=true});all[q.a].classList.add("right");if(k==q.a)sc++;else b.classList.add("wrong");var n=document.createElement("button");n.className="btn";n.textContent="التالي";n.onclick=function(){i++;show()};box.appendChild(n)};box.appendChild(b)})}
+show();
+var bg=document.getElementById("bg"),em=["💧","🥗","🏃‍♀️","💙","🍎"];
+for(var j=0;j<14;j++){var e=document.createElement("i");e.textContent=em[j%5];e.style.cssText="right:"+(j*7+2)+"%;font-size:"+(18+j%4*8)+"px;animation-duration:"+(9+j%5*3)+"s;animation-delay:-"+(j*1.3)+"s";bg.appendChild(e)}
+var F=["💧 الإنسولين هرمون يُدخل السكر من الدم إلى خلايا الجسم.","🥗 املئي نصف طبقك بالخضروات.","🏃‍♀️ الحركة 60 دقيقة يومياً تقوّي جسمك.","🚰 الماء أفضل مشروب لصحتك.","👣 افحصي قدميك كل يوم.","🤝 السكري ليس مُعدياً، والصديقة المصابة تحتاج دعمنا."],fi=0,fe=document.getElementById("fact");
+document.getElementById("bd").onclick=function(){fe.style.opacity=0;setTimeout(function(){fe.textContent=F[fi++%F.length];fe.style.opacity=1},200)};
+document.querySelectorAll(".pc").forEach(function(p){p.onclick=function(){p.classList.toggle("on")}});
+var P=["home","types","signs","plate","move","feet","myths","quiz"],N=["الرئيسية","الأنواع","الأعراض","الطبق المثالي","الحركة","القدمان","حقائق","الاختبار"];
+P.forEach(function(id,n){if(!n)return;var d=document.createElement("div");d.className="nxt";d.innerHTML="<a href='#"+P[n-1]+"'>→ "+N[n-1]+"</a>"+(n<P.length-1?"<a href='#"+P[n+1]+"'>"+N[n+1]+" ←</a>":"<a href='#home'>🏠 الرئيسية</a>");document.getElementById(id).appendChild(d)});
+function route(){var h=location.hash.slice(1);if(P.indexOf(h)<0)h="home";P.forEach(function(id){document.getElementById(id).classList.toggle("on",id==h)});document.querySelectorAll("nav a").forEach(function(a){a.classList.toggle("act",a.getAttribute("href")=="#"+h)});window.scrollTo(0,0)}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
